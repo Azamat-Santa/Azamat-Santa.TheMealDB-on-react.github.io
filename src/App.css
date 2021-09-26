@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Satisfy&display=swap');
+
 .searchInput{
   width: 20%;
-  padding: 10px;
-  border: none;
+  border:1px solid rgb(204, 201, 201);
   position: relative;
 
 }
 
 .searchBtn{
   background: rgb(228, 243, 13);
-  color: rgb(179, 176, 176);
+  color: rgb(10, 7, 7);
   font-size: 15px;
   width: 100px;
   height: 36px;
@@ -17,8 +18,11 @@
   align-items: center;
 }
 .OutputBgImg{
-  background-image: url('https://s1.1zoom.ru/big0/55/Cocktail_Stemware_Spray_502278.jpg');
-  background-position: 100% 100%;
+
+  /* background: rgb(12, 8, 8); */
+  height: auto;
+  width: 100vw;
+ 
   background-repeat: no-repeat;
   background-attachment: fixed;
  
@@ -55,19 +59,173 @@
 }
 
 .datailWrapper{
-background-image: url('https://st.depositphotos.com/1043285/2811/i/450/depositphotos_28112007-stock-photo-grunge-background.jpg');
-background-position: 100% 100%;
+
+
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+  
+
   
   
 }
 
-/* git initn
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Azamat-Santa/cocktailDB-on-react.git
-git push -u origin main */
+.modalWrapper{
+position: fixed;
+display: flex;justify-content: center;align-items: center;
+width: 100vw;
+height: 100vh;
+top: 0;left: 0;
+background: rgb(70, 62, 62,0.4);
+pointer-events: none;
+opacity: 0;
+transition: .6s ;
+}
+.activ{
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal{
+background: rgb(248, 248, 248);
+   width: 20%;
+   height: auto;
+   border:1px solid black;
+   padding: 2px;
+   display: border-box;
+
+}
+
+.headerBanner{
+  background-image: url('./img/banner.png');
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  position: relative;
+}
+.headerBanner img {
+  position: absolute;
+  top: 12vh;
+  right: 11%;
+}
+
+.sliderText{
+  width: 100%;
+  text-align: center;
+  color:white;
+  font-family: 'Satisfy', cursive;
+  font-size: 80px;
+  padding-top: 20%;
+}
+.sliderLogo{
+  width: 100%;
+  height: auto;
+}
+.outputCategorieName{
+  text-align: center;
+  color: rgb(122, 116, 116);
+  padding: 5px;
+  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+ transition: .7s;
+ padding-top: 12px;
+
+}
+.outputCategorieName:hover{
+  color: rgb(80, 77, 77);
+
+}
+
+.outputCardLink{
+width: 30%;
+padding: 10px;
+margin: 10px;
+text-decoration: none;
+transition: .7s;
+/* border-radius: 5px; */
+box-sizing: border-box;
+border:1px solid rgb(204, 201, 201);
+
+}
+.outputCardLink:hover{
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.94); 
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.94);
+}
+Link{
+  text-decoration: none;
+}
+.DatailTitle{
+  width: 100%;
+  text-align: center;
+}
+.DatailTitle h2{
+  font-size: 50px;
+
+}
+.datailWrapper{
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+  .navbar-light .navbar-toggle{
+    padding-right: 10px !important;
+  }
+
+@media screen and (max-width:768px) {
+  .outputCategorieName{
+    font-size: 20px;
+  }
+  .headerBanner img{
+    top: 14vh;
+    width: 70px;
+    height: 70px;
+  }
+  .headerBanner{
+    height: 50vh;
+  }
+}
+
+
+@media screen and (max-width:550px) {
+  
+  .headerBanner img{
+    
+    width: 50px;
+    height: 50px;
+  }
+  .sliderText{
+     font-size: 50px;
+  }
+  
+  .searchInput{
+    width: 30%;
+  }
+  .searchBtn{
+    font-size: 12px;
+  }
+  .datailWrapper{
+    width: 100%;
+  }
+  .sliderText{
+    padding-top: 45%;
+  }
+}
+
+@media screen and (max-width:378px) {
+  
+  .sliderText{
+    font-size: 40px;
+ }
+ .DatailTitle h2{
+   font-size: 30px;
+ }
+ .outputCardLink{
+   width: 80%;
+ }
+ .headerBanner{
+  height: 40vh;
+}
+}
+
+

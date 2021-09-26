@@ -1,31 +1,37 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import '../../App.css'
 
-export default function OUTPUT({ data }) {
+export default function OUTPUT({ data, dataSearch }) {
     return (
-        <div style={{ width: '100%', display: "flex", flexWrap: 'wrap',justifyContent:'center', }}>
+        <div className='datailWrapper'>
+         <div className='DatailTitle'><h2>Category</h2></div>
+ 
 
+            {data ?
 
-            {data ? data.map((el) => {
-                return (
-                    
-                    <Link to={'/cocktaiInfo/' + el.idDrink} style={{ width: '20%', padding: '10px' ,textDecoration:'none'}} key={el.idDrink}>
-                        <div key={el.idDrink} style={{background:'white'}} >
+                data.map((el,index) => {
+                    return (
+                        <>
+                            <NavLink to={'/categorieInfo/' + el.strCategory} className='outputCardLink' key={index}>
+                                <div key={el.idCategory} style={{ background: 'white' }} >
+                                    <img style={{ width: '100%', height: '80%' }} src={el.strCategoryThumb} alt={el.id} />
+                                    <div className='outputCategorieName' >
+                                        {el.strCategory}
+                                    </div>
+                                </div>
+                            </NavLink>
 
-                            <img style={{ width: '100%', height: '80%' }} src={el.strDrinkThumb} />
+                            <div>
 
-                            <div style={{textAlign:'center', color:'grey',height:'50px',}} > Name:<span style={{color:'black'}}>{el.strDrink}</span></div>
-                        </div>
-                    </Link>
-                    
-                    
-                )
-            })
+                            </div>
+                        </>
+                    )
+                })
+                :
+                <h3>pusto</h3>}
+       
 
-
-
-
-                : <h3>Pusto</h3>}
         </div>
     )
 }
