@@ -1,50 +1,64 @@
 import React from 'react'
 
 
-export default function SearchOutput({data}) {
-    console.log(data.length);
-    return (
-        <div className='aboutMealDescription'>
-                <div className='aboutMealDescriptionLeft'>
-                  <h2>{data.strMeal}</h2>
+export default function SearchOutput(props) {
+  
+  return (
+    <div>
+      {
+        props.data ? props.data.map((item) => {
+          return (
 
-                  <img src={data.strMealThumb} alt={data.strMealThumb}/>
+            <div className='aboutMealDescription' key={item.strMeal}>
+              <div className='aboutMealDescriptionLeft'>
+                <h2>{item.strMeal}</h2>
 
-                </div>
-                 <div className='aboutMealDescriptionIngridients'>
-                    <h2>Ingredients</h2>
+                <img src={item.strMealThumb} />
 
-                    {data.strIngredient1?<div >{data.strMeasure1} {data.strIngredient1}</div>:null}
-                    {data.strIngredient2?<div>{data.strMeasure2} {data.strIngredient2}</div>:null}
-                    {data.strIngredient3?<div>{data.strMeasure3} {data.strIngredient3}</div>:null}
-                    {data.strIngredient4?<div>{data.strMeasure4} {data.strIngredient4}</div>:null}
-                    {data.strIngredient5?<div>{data.strMeasure5} {data.strIngredient5}</div>:null}
-                    {data.strIngredient6?<div>{data.strMeasure6} {data.strIngredient6}</div>:null}
-                    {data.strIngredient7?<div>{data.strMeasure7} {data.strIngredient7}</div>:null}
-                    {data.strIngredient8?<div>{data.strMeasure8} {data.strIngredient8}</div>:null}
-                    {data.strIngredient9?<div>{data.strMeasure9} {data.strIngredient9}</div>:null}
-                    {data.strIngredient10?<div>{data.strMeasure10} {data.strIngredient10}</div>:null}
-                    {data.strIngredient11?<div>{data.strMeasure11} {data.strIngredient11}</div>:null}
-                    {data.strIngredient12?<div>{data.strMeasure12} {data.strIngredient12}</div>:null}
-                    {data.strIngredient13?<div>{data.strMeasure13} {data.strIngredient13}</div>:null}
-                    {data.strIngredient14?<div>{data.strMeasure14} {data.strIngredient14}</div>:null}
-                    {data.strIngredient15?<div>{data.strMeasure15} {data.strIngredient15}</div>:null}
-                    {data.strIngredient16?<div>{data.strMeasure16} {data.strIngredient16}</div>:null}
-                    {data.strIngredient17?<div>{data.strMeasure17} {data.strIngredient17}</div>:null}
-                    {data.strIngredient18?<div>{data.strMeasure18} {data.strIngredient18}</div>:null}
-                    {data.strIngredient19?<div>{data.strMeasure19} {data.strIngredient19}</div>:null}
-                    {data.strIngredient20?<div>{data.strMeasure20} {data.strIngredient20}</div>:null}
-                   
-                  </div>
-                <div className='abouteMealDescr'>
-                  
-                    <h2>Method</h2>
-                    {data.strInstructions}
-                </div>
+              </div>
+              <div className='aboutMealDescriptionIngridients'>
+                <h2>Ingredients</h2>
 
-                
-                 
-                </div>
+                {item.strIngredient1 ? <div >{item.strMeasure1} {item.strIngredient1}</div> : null}
+                {item.strIngredient2 ? <div>{item.strMeasure2} {item.strIngredient2}</div> : null}
+                {item.strIngredient3 ? <div>{item.strMeasure3} {item.strIngredient3}</div> : null}
+                {item.strIngredient4 ? <div>{item.strMeasure4} {item.strIngredient4}</div> : null}
+                {item.strIngredient5 ? <div>{item.strMeasure5} {item.strIngredient5}</div> : null}
+                {item.strIngredient6 ? <div>{item.strMeasure6} {item.strIngredient6}</div> : null}
+                {item.strIngredient7 ? <div>{item.strMeasure7} {item.strIngredient7}</div> : null}
+                {item.strIngredient8 ? <div>{item.strMeasure8} {item.strIngredient8}</div> : null}
+                {item.strIngredient9 ? <div>{item.strMeasure9} {item.strIngredient9}</div> : null}
+                {item.strIngredient10 ? <div>{item.strMeasure10} {item.strIngredient10}</div> : null}
+                {item.strIngredient11 ? <div>{item.strMeasure11} {item.strIngredient11}</div> : null}
+                {item.strIngredient12 ? <div>{item.strMeasure12} {item.strIngredient12}</div> : null}
+                {item.strIngredient13 ? <div>{item.strMeasure13} {item.strIngredient13}</div> : null}
+                {item.strIngredient14 ? <div>{item.strMeasure14} {item.strIngredient14}</div> : null}
+                {item.strIngredient15 ? <div>{item.strMeasure15} {item.strIngredient15}</div> : null}
+                {item.strIngredient16 ? <div>{item.strMeasure16} {item.strIngredient16}</div> : null}
+                {item.strIngredient17 ? <div>{item.strMeasure17} {item.strIngredient17}</div> : null}
+                {item.strIngredient18 ? <div>{item.strMeasure18} {item.strIngredient18}</div> : null}
+                {item.strIngredient19 ? <div>{item.strMeasure19} {item.strIngredient19}</div> : null}
+                {item.strIngredient20 ? <div>{item.strMeasure20} {item.strIngredient20}</div> : null}
 
-    )
+              </div>
+              <div className='abouteMealDescr'>
+
+                <h2>Method</h2>
+                {item.strInstructions}
+              </div>
+
+
+
+            </div>
+
+
+
+
+
+          )
+        })
+          : <h2>Такого блюда не существует</h2>
+      }
+    </div>
+  )
 }

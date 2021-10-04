@@ -1,6 +1,7 @@
 import React from 'react'
 import { getMealByNameApi } from '../../config';
 import '../AbouteMeal/abouteMeal.css'
+import '../../App.css'
 
 export default function AbouteMeal(props) {
 
@@ -18,59 +19,73 @@ export default function AbouteMeal(props) {
   const getIngredients = async (name) => {
     const req = await fetch(getMealByNameApi + name);
     const res = await req.json();
-    setDataMeal(res.dataMeal[0]);
-    console.log(res.dataMeal[0])
+    setDataMeal(res.meals);
+    console.log(res.meals)
   }
 
- 
+
 
   return (
-    
-              <div className='aboutMealDescription'>
+    <div>
+      {
+        dataMeal ? dataMeal.map((item) => {
+          return (
+            <div key={item.idMeal}>
+              <div className='aboutMealDescription' >
                 <div className='aboutMealDescriptionLeft'>
-                  <h2>{dataMeal.strMeal}</h2>
+                  <h2>{item.strMeal}</h2>
 
-                  <img src={dataMeal.strMealThumb} alt={dataMeal.strMealThumb}/>
+                  <img src={item.strMealThumb} alt={item.strMeal} />
 
                 </div>
-                 <div className='aboutMealDescriptionIngridients'>
+                <div className='aboutMealDescriptionIngridients'>
+                  <div className="ingridientTitle">
                     <h2>Ingredients</h2>
-
-                    {dataMeal.strIngredient1?<div >{dataMeal.strMeasure1} {dataMeal.strIngredient1}</div>:null}
-                    {dataMeal.strIngredient2?<div>{dataMeal.strMeasure2} {dataMeal.strIngredient2}</div>:null}
-                    {dataMeal.strIngredient3?<div>{dataMeal.strMeasure3} {dataMeal.strIngredient3}</div>:null}
-                    {dataMeal.strIngredient4?<div>{dataMeal.strMeasure4} {dataMeal.strIngredient4}</div>:null}
-                    {dataMeal.strIngredient5?<div>{dataMeal.strMeasure5} {dataMeal.strIngredient5}</div>:null}
-                    {dataMeal.strIngredient6?<div>{dataMeal.strMeasure6} {dataMeal.strIngredient6}</div>:null}
-                    {dataMeal.strIngredient7?<div>{dataMeal.strMeasure7} {dataMeal.strIngredient7}</div>:null}
-                    {dataMeal.strIngredient8?<div>{dataMeal.strMeasure8} {dataMeal.strIngredient8}</div>:null}
-                    {dataMeal.strIngredient9?<div>{dataMeal.strMeasure9} {dataMeal.strIngredient9}</div>:null}
-                    {dataMeal.strIngredient10?<div>{dataMeal.strMeasure10} {dataMeal.strIngredient10}</div>:null}
-                    {dataMeal.strIngredient11?<div>{dataMeal.strMeasure11} {dataMeal.strIngredient11}</div>:null}
-                    {dataMeal.strIngredient12?<div>{dataMeal.strMeasure12} {dataMeal.strIngredient12}</div>:null}
-                    {dataMeal.strIngredient13?<div>{dataMeal.strMeasure13} {dataMeal.strIngredient13}</div>:null}
-                    {dataMeal.strIngredient14?<div>{dataMeal.strMeasure14} {dataMeal.strIngredient14}</div>:null}
-                    {dataMeal.strIngredient15?<div>{dataMeal.strMeasure15} {dataMeal.strIngredient15}</div>:null}
-                    {dataMeal.strIngredient16?<div>{dataMeal.strMeasure16} {dataMeal.strIngredient16}</div>:null}
-                    {dataMeal.strIngredient17?<div>{dataMeal.strMeasure17} {dataMeal.strIngredient17}</div>:null}
-                    {dataMeal.strIngredient18?<div>{dataMeal.strMeasure18} {dataMeal.strIngredient18}</div>:null}
-                    {dataMeal.strIngredient19?<div>{dataMeal.strMeasure19} {dataMeal.strIngredient19}</div>:null}
-                    {dataMeal.strIngredient20?<div>{dataMeal.strMeasure20} {dataMeal.strIngredient20}</div>:null}
-                   
                   </div>
+
+                  <div className="ingridientElement">
+                    {item.strIngredient1 ? <div >{item.strMeasure1} {item.strIngredient1}</div> : null}
+                    {item.strIngredient2 ? <div>{item.strMeasure2} {item.strIngredient2}</div> : null}
+                    {item.strIngredient3 ? <div>{item.strMeasure3} {item.strIngredient3}</div> : null}
+                    {item.strIngredient4 ? <div>{item.strMeasure4} {item.strIngredient4}</div> : null}
+                    {item.strIngredient5 ? <div>{item.strMeasure5} {item.strIngredient5}</div> : null}
+                    {item.strIngredient6 ? <div>{item.strMeasure6} {item.strIngredient6}</div> : null}
+                    {item.strIngredient7 ? <div>{item.strMeasure7} {item.strIngredient7}</div> : null}
+                    {item.strIngredient8 ? <div>{item.strMeasure8} {item.strIngredient8}</div> : null}
+                    {item.strIngredient9 ? <div>{item.strMeasure9} {item.strIngredient9}</div> : null}
+                    {item.strIngredient10 ? <div>{item.strMeasure10} {item.strIngredient10}</div> : null}
+                    {item.strIngredient11 ? <div>{item.strMeasure11} {item.strIngredient11}</div> : null}
+                    {item.strIngredient12 ? <div>{item.strMeasure12} {item.strIngredient12}</div> : null}
+                    {item.strIngredient13 ? <div>{item.strMeasure13} {item.strIngredient13}</div> : null}
+                    {item.strIngredient14 ? <div>{item.strMeasure14} {item.strIngredient14}</div> : null}
+                    {item.strIngredient15 ? <div>{item.strMeasure15} {item.strIngredient15}</div> : null}
+                    {item.strIngredient16 ? <div>{item.strMeasure16} {item.strIngredient16}</div> : null}
+                    {item.strIngredient17 ? <div>{item.strMeasure17} {item.strIngredient17}</div> : null}
+                    {item.strIngredient18 ? <div>{item.strMeasure18} {item.strIngredient18}</div> : null}
+                    {item.strIngredient19 ? <div>{item.strMeasure19} {item.strIngredient19}</div> : null}
+                    {item.strIngredient20 ? <div>{item.strMeasure20} {item.strIngredient20}</div> : null}
+                  </div>
+
+
+
+                </div>
                 <div className='abouteMealDescr'>
-                  
-                    <h2>Method</h2>
-                    {dataMeal.strInstructions}
+
+                  <h2>Method</h2>
+                  {item.strInstructions}
                 </div>
 
-                
-                 
-                </div>
-
-              
 
 
-          
+              </div>
+
+
+
+
+            </div>
+          )
+        }) : <div style={{height:'80vh'}}><div className="lds-ripple"><div></div><div></div></div></div>
+      }
+    </div>
   )
 }

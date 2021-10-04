@@ -1,21 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Satisfy&display=swap');
-@font-face{
 
-    font-family: 'Bogart';
-    
-    src: url('../../fonts/bogart/Bogart-Extrabold-trial.ttf');
-    
-   
-    
-    font-weight: bold;
-    
-    font-style: italic;
-    
-    }
-h2{
-  font-family: 'Satisfy', cursive;
-
-}
 .aboutMealDescription{
   display: flex;
   justify-content: space-around;
@@ -38,12 +21,37 @@ h2{
     width: 25%;
     
 }
-.aboutMealDescriptionIngridients div{
-   border-bottom: 2px solid rgb(206, 202, 202);
-   
+.aboutMealDescriptionIngridients{
+  
+  width: 20%;
+
 }
- 
-@media screen and (max-width:550px) {
+
+.ingridientElement div{
+  border-bottom: 2px solid rgb(100, 85, 100);
+
+}
+
+
+@media screen and (max-width:1200px){
+  .aboutMealDescriptionIngridients{
+    display: flex;
+    width: 80%;
+  
+  }
+  .ingridientTitle{
+    width: 30%;
+  }
+  .ingridientElement{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ingridientElement div{
+      border-bottom: 2px solid rgb(100, 85, 100);
+      margin: 6px;
+      padding-right: 3px;
+  }
   .aboutMealDescription{
     flex-direction: column;
     align-items: center;
@@ -56,5 +64,19 @@ h2{
     width: 80%;
     margin-top: 30px;
   }
+  .aboutMealDescriptionLeft img{
+    width: 70%;
+  }
 }
+
+@media screen and (max-width:600px){
+  .ingridientElement{
+    width: 100%;
+  }
+  .aboutMealDescriptionIngridients{
+flex-direction: column;
+  }
+}
+ 
+
 

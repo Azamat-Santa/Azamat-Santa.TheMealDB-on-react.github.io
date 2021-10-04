@@ -1,36 +1,42 @@
 import React from 'react'
-import { Form, FormControl, Nav, NavLink, Button } from 'react-bootstrap'
+import { Form, FormControl, Nav, Button } from 'react-bootstrap'
 import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'react-router-dom'
 import '../../App.css'
+import { useSelector } from 'react-redux';
 
 export default function NavbarHeader({name,changeName,send}) {
+
+    let favoriteArr = useSelector(state => state.mealReducer.favorite)
+
+
     return (
 
         <Navbar bg="light" expand="lg" fixed="top">
-            <NavLink to='/' style={{ textDecoration: 'none' }}><Navbar.Brand href="#" className='pr-10'>TheMealDB</Navbar.Brand></NavLink>
+            <Navbar.Brand href="#" to='/' className='pr-10'>TheMealDB</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" style={{ marginRight: '10px', }} />
-            <Navbar.Collapse id="navbarScroll" >
+            <Navbar.Collapse id="navbarScroll" className='nabvarCollapse' >
                 <Nav
                     className="mr-auto my-2 my-lg-0"
                     style={{ maxHeight: '100px' }}
                     navbarScroll
 
                 >
-                    <NavLink to='/' style={{ textDecoration: 'none', paddingLeft: '10px' }}> <Nav.Link href="#action1">Home</Nav.Link></NavLink>
-                    <NavLink to='/contact/' style={{ textDecoration: 'none', paddingLeft: '10px' }}><Nav.Link href="#action2">Contact</Nav.Link></NavLink>
+                    <Link to="/" className='headerLink'>Главная</Link>
+                    <div className='navLinkFavorite headerLink'><Link to="/favorite/" >Избранные</Link><span>{favoriteArr.length}</span></div>
+                     <Link to="/contact/"className='headerLink' >Контакты</Link>
 
                 </Nav>
                 <Form className="d-flex">
                     <FormControl
                         value={name}
                         type="search"
-                        placeholder="Search"
+                        placeholder="Введите название"
                         className="me-2"
                         aria-label="Search"
                         onChange={(e) => changeName(e.target.value)}
                     />
-                    <Button variant="outline-success" onClick={send}><Link  to='/searchOutput/'  >Search</Link></Button>
+                    <Button variant="outline-success" onClick={name===''?null:send}><Link  to={name===""?'/':'/searchOutput/'} className='btnFormControl'  >Поиск</Link></Button>
                 </Form>
 
             </Navbar.Collapse>
