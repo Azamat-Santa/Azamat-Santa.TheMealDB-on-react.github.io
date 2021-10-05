@@ -2,7 +2,7 @@
   "name": "cocktail",
   "version": "0.1.0",
   "private": true,
-  "homepage": " https://azamat-santa.github.io/Azamat-Santa.github.ioTheMealDB-on-react/",
+
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",

@@ -12,12 +12,12 @@ import { store } from './Redux/index';
 
 ReactDOM.render(
   
-  <BrowserRouter>
+ 
   <Provider store={store}>
+   <BrowserRouter>
      <App />
-  </Provider>
-     
-  </BrowserRouter>,
+     </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
 reportWebVitals();
