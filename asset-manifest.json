@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/TheMealDB-on-react.github.io/static/css/main.3ad4e61b.chunk.css",
-    "main.js": "/TheMealDB-on-react.github.io/static/js/main.e48ca098.chunk.js",
-    "main.js.map": "/TheMealDB-on-react.github.io/static/js/main.e48ca098.chunk.js.map",
-    "runtime-main.js": "/TheMealDB-on-react.github.io/static/js/runtime-main.d84281f6.js",
-    "runtime-main.js.map": "/TheMealDB-on-react.github.io/static/js/runtime-main.d84281f6.js.map",
-    "static/css/2.0f64ccca.chunk.css": "/TheMealDB-on-react.github.io/static/css/2.0f64ccca.chunk.css",
-    "static/js/2.122f1d25.chunk.js": "/TheMealDB-on-react.github.io/static/js/2.122f1d25.chunk.js",
-    "static/js/2.122f1d25.chunk.js.map": "/TheMealDB-on-react.github.io/static/js/2.122f1d25.chunk.js.map",
-    "static/js/3.534573dd.chunk.js": "/TheMealDB-on-react.github.io/static/js/3.534573dd.chunk.js",
-    "static/js/3.534573dd.chunk.js.map": "/TheMealDB-on-react.github.io/static/js/3.534573dd.chunk.js.map",
-    "index.html": "/TheMealDB-on-react.github.io/index.html",
-    "static/css/2.0f64ccca.chunk.css.map": "/TheMealDB-on-react.github.io/static/css/2.0f64ccca.chunk.css.map",
-    "static/css/main.3ad4e61b.chunk.css.map": "/TheMealDB-on-react.github.io/static/css/main.3ad4e61b.chunk.css.map",
-    "static/js/2.122f1d25.chunk.js.LICENSE.txt": "/TheMealDB-on-react.github.io/static/js/2.122f1d25.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/TheMealDB-on-react.github.io/static/media/banner.636fde86.png",
-    "static/media/heartRed.96f644a6.svg": "/TheMealDB-on-react.github.io/static/media/heartRed.96f644a6.svg",
-    "static/media/loaderImage.dbb22bcf.gif": "/TheMealDB-on-react.github.io/static/media/loaderImage.dbb22bcf.gif"
+    "main.css": "/Azamat-Santa.TheMealDB-on-react.github.io/static/css/main.a2030feb.chunk.css",
+    "main.js": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/main.e48ca098.chunk.js",
+    "main.js.map": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/main.e48ca098.chunk.js.map",
+    "runtime-main.js": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/runtime-main.d56878fe.js",
+    "runtime-main.js.map": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/runtime-main.d56878fe.js.map",
+    "static/css/2.0f64ccca.chunk.css": "/Azamat-Santa.TheMealDB-on-react.github.io/static/css/2.0f64ccca.chunk.css",
+    "static/js/2.122f1d25.chunk.js": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/2.122f1d25.chunk.js",
+    "static/js/2.122f1d25.chunk.js.map": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/2.122f1d25.chunk.js.map",
+    "static/js/3.534573dd.chunk.js": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/3.534573dd.chunk.js",
+    "static/js/3.534573dd.chunk.js.map": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/3.534573dd.chunk.js.map",
+    "index.html": "/Azamat-Santa.TheMealDB-on-react.github.io/index.html",
+    "static/css/2.0f64ccca.chunk.css.map": "/Azamat-Santa.TheMealDB-on-react.github.io/static/css/2.0f64ccca.chunk.css.map",
+    "static/css/main.a2030feb.chunk.css.map": "/Azamat-Santa.TheMealDB-on-react.github.io/static/css/main.a2030feb.chunk.css.map",
+    "static/js/2.122f1d25.chunk.js.LICENSE.txt": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/2.122f1d25.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Azamat-Santa.TheMealDB-on-react.github.io/static/media/banner.636fde86.png",
+    "static/media/heartRed.96f644a6.svg": "/Azamat-Santa.TheMealDB-on-react.github.io/static/media/heartRed.96f644a6.svg",
+    "static/media/loaderImage.dbb22bcf.gif": "/Azamat-Santa.TheMealDB-on-react.github.io/static/media/loaderImage.dbb22bcf.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.d84281f6.js",
+    "static/js/runtime-main.d56878fe.js",
     "static/css/2.0f64ccca.chunk.css",
     "static/js/2.122f1d25.chunk.js",
-    "static/css/main.3ad4e61b.chunk.css",
+    "static/css/main.a2030feb.chunk.css",
     "static/js/main.e48ca098.chunk.js"
   ]
 }
