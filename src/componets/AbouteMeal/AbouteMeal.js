@@ -9,7 +9,7 @@ export default function AbouteMeal(props) {
     let name = props?.match.params.abouteMeal;
     getIngredients(name);
 
-  }, []);
+  }, [props]);
 
 
 

@@ -40,7 +40,7 @@ export default function App() {
         <Route  path="/favorite/"  component={Favorite} />
         <Route path="/searchOutput/" render={SearchOutputFunc} />
         <Route  path="/contact/"  render={Contact} />
-        <Redirect path="/" exact component={Home}/>
+        <Redirect to="/" exact component={Home}/>
       </Switch>
       
   </>

@@ -25,7 +25,7 @@ export default function Datail(props) {
   React.useEffect(() => {
     const categorieName = props?.match.params.categorieName;
     getDetail(categorieName);
-  },[]);
+  },[props]);
 
 
 

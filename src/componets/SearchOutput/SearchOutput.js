@@ -13,7 +13,7 @@ export default function SearchOutput(props) {
               <div className='aboutMealDescriptionLeft'>
                 <h2>{item.strMeal}</h2>
 
-                <img src={item.strMealThumb} />
+                <img src={item.strMealThumb} alt={item.strMeal} />
 
               </div>
               <div className='aboutMealDescriptionIngridients'>
