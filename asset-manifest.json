@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/Azamat-Santa.github.ioTheMealDB-on-react/static/css/main.3d651420.chunk.css",
-    "main.js": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/main.6fe5fbc6.chunk.js",
-    "main.js.map": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/main.6fe5fbc6.chunk.js.map",
-    "runtime-main.js": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/runtime-main.4d5baf6c.js",
-    "runtime-main.js.map": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/runtime-main.4d5baf6c.js.map",
-    "static/css/2.0f64ccca.chunk.css": "/Azamat-Santa.github.ioTheMealDB-on-react/static/css/2.0f64ccca.chunk.css",
-    "static/js/2.9965cde1.chunk.js": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/2.9965cde1.chunk.js",
-    "static/js/2.9965cde1.chunk.js.map": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/2.9965cde1.chunk.js.map",
-    "static/js/3.534573dd.chunk.js": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/3.534573dd.chunk.js",
-    "static/js/3.534573dd.chunk.js.map": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/3.534573dd.chunk.js.map",
-    "index.html": "/Azamat-Santa.github.ioTheMealDB-on-react/index.html",
-    "static/css/2.0f64ccca.chunk.css.map": "/Azamat-Santa.github.ioTheMealDB-on-react/static/css/2.0f64ccca.chunk.css.map",
-    "static/css/main.3d651420.chunk.css.map": "/Azamat-Santa.github.ioTheMealDB-on-react/static/css/main.3d651420.chunk.css.map",
-    "static/js/2.9965cde1.chunk.js.LICENSE.txt": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/2.9965cde1.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/Azamat-Santa.github.ioTheMealDB-on-react/static/media/banner.636fde86.png",
-    "static/media/heartRed.96f644a6.svg": "/Azamat-Santa.github.ioTheMealDB-on-react/static/media/heartRed.96f644a6.svg",
-    "static/media/loaderImage.dbb22bcf.gif": "/Azamat-Santa.github.ioTheMealDB-on-react/static/media/loaderImage.dbb22bcf.gif"
+    "main.css": "/static/css/main.5aa71d85.chunk.css",
+    "main.js": "/static/js/main.db821c20.chunk.js",
+    "main.js.map": "/static/js/main.db821c20.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0347bb9c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0347bb9c.js.map",
+    "static/css/2.0f64ccca.chunk.css": "/static/css/2.0f64ccca.chunk.css",
+    "static/js/2.973b2890.chunk.js": "/static/js/2.973b2890.chunk.js",
+    "static/js/2.973b2890.chunk.js.map": "/static/js/2.973b2890.chunk.js.map",
+    "static/js/3.534573dd.chunk.js": "/static/js/3.534573dd.chunk.js",
+    "static/js/3.534573dd.chunk.js.map": "/static/js/3.534573dd.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.0f64ccca.chunk.css.map": "/static/css/2.0f64ccca.chunk.css.map",
+    "static/css/main.5aa71d85.chunk.css.map": "/static/css/main.5aa71d85.chunk.css.map",
+    "static/js/2.973b2890.chunk.js.LICENSE.txt": "/static/js/2.973b2890.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/banner.636fde86.png",
+    "static/media/heartRed.96f644a6.svg": "/static/media/heartRed.96f644a6.svg",
+    "static/media/loaderImage.dbb22bcf.gif": "/static/media/loaderImage.dbb22bcf.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d5baf6c.js",
+    "static/js/runtime-main.0347bb9c.js",
     "static/css/2.0f64ccca.chunk.css",
-    "static/js/2.9965cde1.chunk.js",
-    "static/css/main.3d651420.chunk.css",
-    "static/js/main.6fe5fbc6.chunk.js"
+    "static/js/2.973b2890.chunk.js",
+    "static/css/main.5aa71d85.chunk.css",
+    "static/js/main.db821c20.chunk.js"
   ]
 }
