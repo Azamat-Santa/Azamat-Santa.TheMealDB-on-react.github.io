@@ -13,6 +13,7 @@ import Home from './pages/Home/Home';
 
 
 
+
 export default function App() {
 
   const [name, setName] = useState('')
@@ -46,12 +47,12 @@ export default function App() {
        />
      
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/categorieInfo/:categorieName"  component={Datail} />
-        <Route path="/abouteMeal/:abouteMeal"  component={AbouteMeal} />
-        <Route path="/favorite/"  component={Favorite} />
-        <Route path="/searchOutput/"  render={SearchOutputFunc} />
-        <Route path="/contact/"  render={Contact} />
+        <Route  path="/"  component={Home} />
+        <Route exact path="/categorieInfo/:categorieName"  component={Datail} />
+        <Route exact path="/abouteMeal/:abouteMeal"  component={AbouteMeal} />
+        <Route exact path="/favorite/"  component={Favorite} />
+        <Route exact path="/searchOutput/"  render={SearchOutputFunc} />
+        <Route exact path="/contact/"  render={Contact} />
       </Switch>
     </>
   )
