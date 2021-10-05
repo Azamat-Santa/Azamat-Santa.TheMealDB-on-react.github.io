@@ -47,9 +47,9 @@ export default function App() {
      
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/categorieInfo/:categorieName" exact component={Datail} />
-        <Route path="/abouteMeal/:abouteMeal" exact component={AbouteMeal} />
-        <Route path="/favorite/" exact component={Favorite} />
+        <Route path="/categorieInfo/:categorieName"  component={Datail} />
+        <Route path="/abouteMeal/:abouteMeal"  component={AbouteMeal} />
+        <Route path="/favorite/"  component={Favorite} />
         <Route path="/searchOutput/"  render={SearchOutputFunc} />
         <Route path="/contact/"  render={Contact} />
       </Switch>
