@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/Azamat-Santa.TheMealDB-on-react.github.io/static/css/main.a2030feb.chunk.css",
-    "main.js": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/main.e48ca098.chunk.js",
-    "main.js.map": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/main.e48ca098.chunk.js.map",
-    "runtime-main.js": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/runtime-main.d56878fe.js",
-    "runtime-main.js.map": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/runtime-main.d56878fe.js.map",
-    "static/css/2.0f64ccca.chunk.css": "/Azamat-Santa.TheMealDB-on-react.github.io/static/css/2.0f64ccca.chunk.css",
-    "static/js/2.122f1d25.chunk.js": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/2.122f1d25.chunk.js",
-    "static/js/2.122f1d25.chunk.js.map": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/2.122f1d25.chunk.js.map",
-    "static/js/3.534573dd.chunk.js": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/3.534573dd.chunk.js",
-    "static/js/3.534573dd.chunk.js.map": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/3.534573dd.chunk.js.map",
-    "index.html": "/Azamat-Santa.TheMealDB-on-react.github.io/index.html",
-    "static/css/2.0f64ccca.chunk.css.map": "/Azamat-Santa.TheMealDB-on-react.github.io/static/css/2.0f64ccca.chunk.css.map",
-    "static/css/main.a2030feb.chunk.css.map": "/Azamat-Santa.TheMealDB-on-react.github.io/static/css/main.a2030feb.chunk.css.map",
-    "static/js/2.122f1d25.chunk.js.LICENSE.txt": "/Azamat-Santa.TheMealDB-on-react.github.io/static/js/2.122f1d25.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/Azamat-Santa.TheMealDB-on-react.github.io/static/media/banner.636fde86.png",
-    "static/media/heartRed.96f644a6.svg": "/Azamat-Santa.TheMealDB-on-react.github.io/static/media/heartRed.96f644a6.svg",
-    "static/media/loaderImage.dbb22bcf.gif": "/Azamat-Santa.TheMealDB-on-react.github.io/static/media/loaderImage.dbb22bcf.gif"
+    "main.css": "/Azamat-Santa.github.ioTheMealDB-on-react/static/css/main.7aafc7ac.chunk.css",
+    "main.js": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/main.e48ca098.chunk.js",
+    "main.js.map": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/main.e48ca098.chunk.js.map",
+    "runtime-main.js": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/runtime-main.4d5baf6c.js",
+    "runtime-main.js.map": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/runtime-main.4d5baf6c.js.map",
+    "static/css/2.0f64ccca.chunk.css": "/Azamat-Santa.github.ioTheMealDB-on-react/static/css/2.0f64ccca.chunk.css",
+    "static/js/2.122f1d25.chunk.js": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/2.122f1d25.chunk.js",
+    "static/js/2.122f1d25.chunk.js.map": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/2.122f1d25.chunk.js.map",
+    "static/js/3.534573dd.chunk.js": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/3.534573dd.chunk.js",
+    "static/js/3.534573dd.chunk.js.map": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/3.534573dd.chunk.js.map",
+    "index.html": "/Azamat-Santa.github.ioTheMealDB-on-react/index.html",
+    "static/css/2.0f64ccca.chunk.css.map": "/Azamat-Santa.github.ioTheMealDB-on-react/static/css/2.0f64ccca.chunk.css.map",
+    "static/css/main.7aafc7ac.chunk.css.map": "/Azamat-Santa.github.ioTheMealDB-on-react/static/css/main.7aafc7ac.chunk.css.map",
+    "static/js/2.122f1d25.chunk.js.LICENSE.txt": "/Azamat-Santa.github.ioTheMealDB-on-react/static/js/2.122f1d25.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Azamat-Santa.github.ioTheMealDB-on-react/static/media/banner.636fde86.png",
+    "static/media/heartRed.96f644a6.svg": "/Azamat-Santa.github.ioTheMealDB-on-react/static/media/heartRed.96f644a6.svg",
+    "static/media/loaderImage.dbb22bcf.gif": "/Azamat-Santa.github.ioTheMealDB-on-react/static/media/loaderImage.dbb22bcf.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.d56878fe.js",
+    "static/js/runtime-main.4d5baf6c.js",
     "static/css/2.0f64ccca.chunk.css",
     "static/js/2.122f1d25.chunk.js",
-    "static/css/main.a2030feb.chunk.css",
+    "static/css/main.7aafc7ac.chunk.css",
     "static/js/main.e48ca098.chunk.js"
   ]
 }
