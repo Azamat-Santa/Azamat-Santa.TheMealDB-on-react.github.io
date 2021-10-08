@@ -13,11 +13,11 @@ export default function App() {
 
   const [name, setName] = useState('')
   const [dataSearch, setDataSearch] = useState('')
+  
   const getMealByName = async (event) => {
     event.preventDefault()
     let req = await fetch(getMealByNameApi + name)
     let resp = await req.json()
-    console.log();
     setDataSearch(resp.meals)
     setName('')
   }

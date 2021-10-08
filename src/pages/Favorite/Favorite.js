@@ -8,7 +8,9 @@ import { removeFavoriteAct } from '../../Redux/reducer/favorite';
 export default function Favorite() {
 
 
-  const favorite = useSelector(state => state.mealReducer.favorite)
+  let favorite = useSelector(state => state.mealReducer.favorite)
+ 
+  
   const dispatch = useDispatch()
   const removeFavorite = (favorite) => {
     dispatch(removeFavoriteAct(favorite.id))
@@ -18,10 +20,12 @@ export default function Favorite() {
     <>
       <div className='datailWrapper'>
 
+      
+
         {favorite.length > 0
           ?
-          favorite.map(favorite =>
-            <Card style={{ width: '18rem' }}>
+          favorite.map((favorite,index) =>
+            <Card style={{ width: '18rem' }} key={index}>
               <Card.Img variant="top" src={favorite.img} />
               <Card.Body>
                 <Card.Title>{`${favorite.name.length > 18 ? `${favorite.name.substring(0, 18)}...` : favorite.name}`}</Card.Title>

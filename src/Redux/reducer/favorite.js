@@ -1,5 +1,6 @@
 const defaultState ={
-    favorite:[]
+    favorite:[],
+    dict:{}
 }
 
 const ADD_FAVORITE='ADD_FAVORITE'
@@ -9,10 +10,18 @@ const REMOVE_FAVORITE='REMOVE_FAVORITE'
 export const mealReducer=(state=defaultState,action)=>{
     switch(action.type){ 
 
-   
-
     case ADD_FAVORITE:
-     return{...state, favorite:[...state.favorite,action.payload]}
+      const newDict=Object.assign({},state.dict)
+      const filtered=action.payload.reduce((accum,obj)=>{
+        if(!newDict[obj.id]){
+          newDict[obj.id]=true
+          accum.push(obj)
+        }
+        return accum
+      },[])
+      const newObjects=[...state.favorite,...filtered]
+      return {favorite:newObjects,dict:newDict}
+     
      
      case REMOVE_FAVORITE:
       return{...state, favorite:state.favorite.filter(filterItem=>filterItem.id !== action.payload)}

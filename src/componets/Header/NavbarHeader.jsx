@@ -35,6 +35,7 @@ export default function NavbarHeader({name,changeName,send}) {
                         className="me-2"
                         aria-label="Search"
                         onChange={(e) => changeName(e.target.value)}
+                        onSubmit={name===''?null:send}
                     />
                     <Button variant="outline-success" onClick={name===''?null:send}><Link  to={name===""?'/':'/searchOutput/'} className='btnFormControl'  >Поиск</Link></Button>
                 </Form>

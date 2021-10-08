@@ -2,6 +2,7 @@ import React from 'react'
 import { getMealByNameApi } from '../../config';
 import '../AbouteMeal/abouteMeal.css'
 import '../../App.css'
+import Loader from './../Loader/Loader';
 
 export default function AbouteMeal(props) {
 
@@ -84,8 +85,9 @@ export default function AbouteMeal(props) {
 
             </div>
           )
-        }) : <div style={{height:'80vh'}}><div className="lds-ripple"><div></div><div></div></div></div>
+        }) : <Loader/>
       }
+      
     </div>
   )
 }
